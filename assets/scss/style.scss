@@ -1,0 +1,87 @@
+$maxWidth: "1200";
+@mixin adaptiv-font($pcSize, $mobSize) {
+  addsize: pcSize - mobSize;
+  maxwidth: maxWidth - 320;
+  font-size: calc(
+    #{mobSize + px} + #{addSize} * ((100vw - 320px) / #{maxWidth})
+  );
+}
+
+$color-ligth: #00b2ff;
+$color-dark: #002b6b;
+$color-grey: #45a3cd;
+
+@font-face {
+  font-family: Yeseva;
+  src: url("../fonts/YesevaOne-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+body {
+  //position: relative; 
+  font-family: Montserrat;
+
+  // overflow: hidden;
+}
+.background__img {
+  position: absolute;
+  &:first-child {
+    top: 0;
+    right: 0;
+  }
+  &:last-child {
+    bottom: 0;
+    left: 0;
+  }
+}
+h1{
+  margin: 0;
+}
+
+.content {
+  height: 100vh;
+  max-height: 100vh;
+}
+.container{
+  height: 100%;
+  padding: 45px;
+}
+
+.wrapper {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 34.7805px -34.7805px 34.7805px rgba(194, 194, 194, 0.1),
+    inset -34.7805px 34.7805px 34.7805px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(69.5611px);
+  border-radius: 34.3615px;
+}
