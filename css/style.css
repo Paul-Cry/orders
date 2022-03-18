@@ -71,6 +71,7 @@ body {
 }
 .wrapper.master {
   display: block;
+  position: relative;
 }
 .wrapper-home-img {
   width: 30vw;
@@ -130,7 +131,7 @@ body {
   margin-right: 20px;
 }
 .wrapper-master-the__title {
-  ont-style: normal;
+  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 129.9%;
@@ -177,7 +178,7 @@ body {
   font-size: 72px;
   line-height: 107.68%;
   letter-spacing: -0.03em;
-  color: #001D53;
+  color: #001d53;
   margin-bottom: 60px;
 }
 .wrapper-master__text {
@@ -200,7 +201,7 @@ body {
   display: flex;
   width: 350px;
   height: 400px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: inset -5px -4px 8px rgba(205, 205, 205, 0.25), inset 5px 4px 6px rgba(205, 205, 205, 0.25);
   border-radius: 29px;
   align-items: center;
@@ -239,7 +240,7 @@ body {
 }
 .burger__item {
   height: 8px;
-  background: linear-gradient(90.44deg, #264E98 16.52%, #00B8FF 86.18%, #4AD9FE 116.33%);
+  background: linear-gradient(90.44deg, #264e98 16.52%, #00b8ff 86.18%, #4ad9fe 116.33%);
   box-shadow: inset 0px 1px 5px 1px rgba(248, 248, 248, 0.58);
   border-radius: 29px;
   width: 100%;
