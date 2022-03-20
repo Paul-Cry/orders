@@ -3,7 +3,15 @@ $(document).ready(()=>{
     $('.slider-feedback').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 400,
+            settings: {
+              arrows: false,
+            }
+          },
+        ]
       });
     $('.slider-my-work').slick({
     infinite: true,

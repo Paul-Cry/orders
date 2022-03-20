@@ -9,21 +9,23 @@
     <title>Запись на мастер класс</title>
 </head>
 <body>
-    <div class="content app entry">
+    <div class="content app entry"> 
         <img src="./assets/img/Vector-master-right.svg" alt="" class="background__img entry form">
-        <img src="./assets/img/exit.svg" alt="" class="exit background__img form">
-        <div class="wrapper entry">
+        <a href="master-class.html" class="exit background__img form"> <img src="./assets/img/exit.svg" alt="" class=""></a>
+       
+        <form action="https://tg.bottap.ru/Polymermodel_bot" class="wrapper entry master-forms">
             <h2 class="wrapper-entry__title">Мастер класс</h2>
             <div class="wrapper-entry-inputs">
-                <input type="text" class="wrapper-entry__input" placeholder="Имя">
-                <input type="text" class="wrapper-entry__input" placeholder="E-mail">
+                <input type="text" class="wrapper-entry__input" name='name' placeholder="Имя" required>
+                <input type="email" class="wrapper-entry__input" name='email' placeholder="E-mail" required>
             </div>
             <div class="center">
                 <button class="button entry">Записаться</button>
             </div>
             
-        </div>
+        </form required>
         <img src="./assets/img/Vector-bottom.svg" alt="" class="background__img entry form">
     </div>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
