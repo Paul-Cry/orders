@@ -158,8 +158,6 @@ if(document.querySelector('.master-forms')){
     console.log('13434');
     
   })
-  
-  
 }
 
 
