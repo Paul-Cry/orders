@@ -831,7 +831,7 @@ a {
 
 .back-main.active {
   z-index: 5 !important;
-  transform: translateX(-50vw) scale(0.8);
+  transform: translateX(-60vw) scale(0.8);
 }
 
 .over {
@@ -942,6 +942,10 @@ a {
 @media screen and (max-width: 800px) {
   .row.master-class {
     display: none;
+  }
+
+  .menu-burger-item p {
+    font-size: 1em;
   }
 
   .burger__home {
